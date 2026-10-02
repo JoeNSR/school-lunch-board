@@ -1,0 +1,420 @@
+{
+ "schools": {
+  "elementary": {
+   "name": "Lincoln Elementary",
+   "label": "ACHM Elementary",
+   "days": {
+    "2026-10-01": {
+     "status": "OK",
+     "items": [
+      "Cheeseburgers",
+      "On a Bun",
+      "Crispy French Fries"
+     ],
+     "alt": null
+    },
+    "2026-10-02": {
+     "status": "OK",
+     "items": [
+      "Mostaccioli",
+      "Steamed Green Beans",
+      "Garlic Toast"
+     ],
+     "alt": null
+    },
+    "2026-10-05": {
+     "status": "OK",
+     "items": [
+      "French Toast Sticks",
+      "Sausage Patty",
+      "Tri Tator Hashbrowns"
+     ],
+     "alt": null
+    },
+    "2026-10-06": {
+     "status": "OK",
+     "items": [
+      "Chicken Patty",
+      "on a Bun",
+      "Sun Chips"
+     ],
+     "alt": null
+    },
+    "2026-10-07": {
+     "status": "OK",
+     "items": [
+      "Personal Pan Pizzas",
+      "Goldfish Cheddar Crackers",
+      "Jonnypops"
+     ],
+     "alt": null
+    },
+    "2026-10-08": {
+     "status": "OK",
+     "items": [
+      "Hot Ham & Cheese",
+      "on a Croissant",
+      "Baked Beans"
+     ],
+     "alt": null
+    },
+    "2026-10-09": {
+     "status": "OK",
+     "items": [
+      "Walking Tacos",
+      "Taco Meat",
+      "Shredded Lettuce/Cheese",
+      "Doritos",
+      "Salsa & Sour Cream"
+     ],
+     "alt": null
+    },
+    "2026-10-12": {
+     "status": "OK",
+     "items": [
+      "Mandarin Orange Chicken",
+      "Fried Rice w/Vegetables",
+      "Egg Roll",
+      "Fortune Cookie"
+     ],
+     "alt": null
+    },
+    "2026-10-13": {
+     "status": "OK",
+     "items": [
+      "Mini Corn Dogs",
+      "Baked Beans",
+      "Side Kick Juices"
+     ],
+     "alt": null
+    },
+    "2026-10-14": {
+     "status": "OK",
+     "items": [
+      "Meatballs with Gravy",
+      "Mashed Potatoes",
+      "Bread & Butter"
+     ],
+     "alt": null
+    },
+    "2026-10-15": {
+     "status": "OK",
+     "items": [
+      "Mini Cheesy Italian",
+      "Bread Pull Aparts",
+      "Steamed Peas",
+      "Marinara Sauce"
+     ],
+     "alt": null
+    },
+    "2026-10-16": {
+     "status": "OK",
+     "items": [
+      "Turkey, Ham & Cheese",
+      "On a Sub Bun",
+      "Baked Chips",
+      "Scooby Doo Chocolate",
+      "Graham Crackers"
+     ],
+     "alt": null
+    },
+    "2026-10-19": {
+     "status": "OK",
+     "items": [
+      "Garlic French Bread Pizza",
+      "Marinara Sauce",
+      "Steamed Corn"
+     ],
+     "alt": null
+    },
+    "2026-10-20": {
+     "status": "OK",
+     "items": [
+      "Chicken Nuggets",
+      "Mashed Potatoes",
+      "Bread & Butter"
+     ],
+     "alt": null
+    },
+    "2026-10-21": {
+     "status": "OK",
+     "items": [
+      "Lasagna",
+      "Steamed Green Beans",
+      "Garlic Knot"
+     ],
+     "alt": null
+    },
+    "2026-10-22": {
+     "status": "OK",
+     "items": [
+      "Quesadilla",
+      "Cheesy Rice",
+      "Refried Beans",
+      "Salsa & Sour Cream"
+     ],
+     "alt": null
+    },
+    "2026-10-23": {
+     "status": "OK",
+     "items": [
+      "Popcorn Chicken",
+      "Baked Soft Pretzels",
+      "Cheddar Cheese Sauce"
+     ],
+     "alt": null
+    },
+    "2026-10-26": {
+     "status": "OK",
+     "items": [
+      "Crispitos",
+      "Tortilla Chips",
+      "Refried Beans",
+      "Salsa & Sour Cream"
+     ],
+     "alt": null
+    },
+    "2026-10-27": {
+     "status": "OK",
+     "items": [
+      "Chicken Ala King",
+      "On a Biscuit",
+      "Steamed Corn"
+     ],
+     "alt": null
+    },
+    "2026-10-28": {
+     "status": "OK",
+     "items": [
+      "Spaghetti Meat Sauce",
+      "Pasta",
+      "Mini Garlic Bread"
+     ],
+     "alt": null
+    },
+    "2026-10-29": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    },
+    "2026-10-30": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    }
+   }
+  },
+  "highschool": {
+   "name": "Lincoln High School",
+   "label": "ACHM High School",
+   "days": {
+    "2026-10-01": {
+     "status": "OK",
+     "items": [
+      "Meatballs with Gravy",
+      "Mashed Potatoes",
+      "Steamed Corn",
+      "Bread & Butter"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-10-02": {
+     "status": "OK",
+     "items": [
+      "Breaded Dill Chicken Breast",
+      "On a Bun",
+      "Baked Beans",
+      "Doritos"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-10-05": {
+     "status": "OK",
+     "items": [
+      "Chicken Strips",
+      "Macaroni & Cheese",
+      "Steamed Peas"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-10-06": {
+     "status": "OK",
+     "items": [
+      "Cheeseburgers",
+      "On a Bun",
+      "Crispy French Fries"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-10-07": {
+     "status": "OK",
+     "items": [
+      "Hot Ham & Cheese",
+      "On a Croissant",
+      "Baked Beans",
+      "Sun Chips"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-10-08": {
+     "status": "OK",
+     "items": [
+      "Cheesy Bread Sticks",
+      "Marinara Sauce",
+      "Steamed Corn",
+      "Side Kick Juices"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-10-09": {
+     "status": "OK",
+     "items": [
+      "Turkey with Gravy",
+      "Mashed Potatoes",
+      "Dinner Rolls",
+      "Butter"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-10-12": {
+     "status": "OK",
+     "items": [
+      "Chicken Patty",
+      "on a Bun",
+      "Steamed Corn",
+      "Doritos"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-10-13": {
+     "status": "OK",
+     "items": [
+      "Mini Corn Dogs",
+      "Tator Tots",
+      "Baked Beans"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-10-14": {
+     "status": "OK",
+     "items": [
+      "Flour Tortilla Shell",
+      "Chicken Fajita Meat/Veggies",
+      "Salsa & Sour Cream",
+      "Shredded Lettuce/Cheese"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-10-15": {
+     "status": "OK",
+     "items": [
+      "Lasagna",
+      "Steamed Green Beans",
+      "Garlic Knot"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-10-16": {
+     "status": "OK",
+     "items": [
+      "Sloppy Joe (BBQ)",
+      "On a Bun",
+      "Smilie Potatoes",
+      "Steamed Peas"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-10-19": {
+     "status": "OK",
+     "items": [
+      "Crispitos w/Cheese",
+      "Spanish Rice",
+      "Tortilla Chips",
+      "Refried Beans",
+      "Salsa & Sour Cream"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-10-20": {
+     "status": "OK",
+     "items": [
+      "Cheeseburger Macaroni",
+      "Casserole",
+      "Steamed Peas",
+      "Bread & Butter"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-10-21": {
+     "status": "OK",
+     "items": [
+      "Popcorn Chicken",
+      "Soft Baked Pretzels",
+      "Cheddar Cheese Sauce",
+      "Steamed Corn"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-10-22": {
+     "status": "OK",
+     "items": [
+      "Spaghetti Meat Sauce",
+      "Pasta",
+      "Garlic Knot"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-10-23": {
+     "status": "OK",
+     "items": [
+      "Chicken Ala King",
+      "On a Biscuit",
+      "Steamed Carrots"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-10-26": {
+     "status": "OK",
+     "items": [
+      "Yang's Orange Chicken",
+      "Fried Rice w/Vegetables",
+      "Egg Rolls",
+      "Fortune Cookie"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-10-27": {
+     "status": "OK",
+     "items": [
+      "Chicken Nuggets",
+      "Mashed Potatoes",
+      "Steamed Corn",
+      "Bread & Butter"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-10-28": {
+     "status": "OK",
+     "items": [
+      "Walking Tacos",
+      "Taco Meat",
+      "Shredded Lettuce/Cheese",
+      "Doritos",
+      "Salsa & Sour Cream"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-10-29": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    },
+    "2026-10-30": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    }
+   }
+  }
+ }
+}
