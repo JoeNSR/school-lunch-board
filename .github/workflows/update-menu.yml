@@ -1,0 +1,41 @@
+name: Update lunch menu data
+
+on:
+  schedule:
+    # Twice a day, off the top of the hour (GitHub delays or drops runs scheduled exactly on the hour).
+    - cron: "7 11 * * *"   # about 6am Central
+    - cron: "7 20 * * *"   # about 3pm Central
+  workflow_dispatch:       # manual run from the Actions tab
+
+permissions:
+  contents: write          # lets the job commit the refreshed menu.json
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Build menu.json from the school's menu PDFs
+        run: python3 send_lunch_menu.py --export-json menu.json
+
+      - name: Commit if the menu changed
+        run: |
+          if [ -n "$(git status --porcelain menu.json)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add menu.json
+            git commit -m "Update lunch menu data"
+            git push
+          else
+            echo "menu.json unchanged"
+          fi
