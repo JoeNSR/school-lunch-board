@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>School lunch</title>
+<style>
+  :root {
+    --fg: #222;
+    --muted: #666;
+    --elem: #c2410c;   /* Elementary label color */
+    --hs: #3949ab;     /* High School label color */
+    --bg: transparent;
+  }
+  :root[data-theme="dark"] {
+    --fg: #f2f2f2;
+    --muted: #b5b5b5;
+    --elem: #ffb38a;
+    --hs: #a9b6ff;
+  }
+  html, body { height: 100%; margin: 0; overflow: hidden; background: var(--bg); }
+  body {
+    color: var(--fg);
+    font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    line-height: 1.18;
+    box-sizing: border-box;
+    padding: 2px 3px;
+  }
+  #app { font-size: 16px; }              /* auto-fit script adjusts this */
+  .head { font-weight: 700; margin: 0 0 0.35em; border-bottom: 1px solid rgba(128,128,128,.45); padding-bottom: 0.15em; }
+  .head .when { margin-right: 0.35em; }
+  .head .date { font-weight: 400; color: var(--muted); }
+  .school { margin: 0 0 0.45em; }
+  .school h2 { font-size: 0.78em; letter-spacing: .05em; text-transform: uppercase; margin: 0 0 0.1em; }
+  .school.elem h2 { color: var(--elem); }
+  .school.hs h2 { color: var(--hs); }
+  .items { margin: 0; }
+  .also, .note { color: var(--muted); font-size: 0.85em; margin: 0.1em 0 0; }
+  .note { font-style: italic; }
+</style>
+</head>
+<body>
+<div id="app"><div class="head"><span class="when">School lunch</span></div></div>
+
+<script>
+// ---- Settings (change here if you like) -------------------------------------------------
+const TIMEZONE = "America/Chicago";
+const SWITCH_HOUR = 14;     // before 2pm show today's lunch; from 2pm on show the next school day
+const SCHOOL_ORDER = ["elementary", "highschool"];
+const SHORT_NAMES = { elementary: "Elementary", highschool: "High School" };
+
+// ---- URL options:  ?theme=dark   ?now=2026-10-02T09:30 (test the page as if it were that time) ----
+const params = new URLSearchParams(location.search);
+if (params.get("theme") === "dark") document.documentElement.dataset.theme = "dark";
+
+let DATA = null;
+
+function chicagoNow() {
+  const override = params.get("now");
+  const d = override ? new Date(override + "Z") : new Date();           // override is read as Central wall-clock time
+  const parts = new Intl.DateTimeFormat("en-US", {
+    timeZone: override ? "UTC" : TIMEZONE, hourCycle: "h23",
+    year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit"
+  }).formatToParts(d).reduce((a, p) => (a[p.type] = p.value, a), {});
+  return { y: +parts.year, m: +parts.month, d: +parts.day, hour: +parts.hour };
+}
+
+function pickTarget(now) {
+  // Dates are handled as UTC midnights so the display's own timezone never matters.
+  const base = new Date(Date.UTC(now.y, now.m - 1, now.d));
+  const isWeekday = dt => dt.getUTCDay() >= 1 && dt.getUTCDay() <= 5;
+  let target = new Date(base), label = "Today";
+  if (!(isWeekday(base) && now.hour < SWITCH_HOUR)) {
+    do { target = new Date(target.getTime() + 86400000); } while (!isWeekday(target));
+    const diff = Math.round((target - base) / 86400000);
+    label = diff === 1 ? "Tomorrow" : target.toLocaleDateString("en-US", { timeZone: "UTC", weekday: "long" });
+  }
+  const key = target.toISOString().slice(0, 10);
+  const pretty = target.toLocaleDateString("en-US", { timeZone: "UTC", weekday: "short", month: "short", day: "numeric" });
+  return { key, label, pretty };
+}
+
+function esc(s) { return String(s).replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c])); }
+
+function render() {
+  const now = chicagoNow();
+  const t = pickTarget(now);
+  let html = `<div class="head"><span class="when">${esc(t.label)}</span><span class="date">${esc(t.pretty)}</span></div>`;
+  for (const key of SCHOOL_ORDER) {
+    const school = DATA && DATA.schools && DATA.schools[key];
+    const cls = key === "elementary" ? "elem" : "hs";
+    html += `<div class="school ${cls}"><h2>${esc(SHORT_NAMES[key])}</h2>`;
+    const day = school && school.days[t.key];
+    if (!DATA) {
+      html += `<p class="note">Loading…</p>`;
+    } else if (!day || day.status === "MISSING") {
+      html += `<p class="note">Menu not posted yet</p>`;
+    } else if (day.status === "NO_SCHOOL") {
+      html += `<p class="items">No school</p>`;
+    } else {
+      html += `<p class="items">${day.items.map(esc).join(", ")}</p>`;
+      if (day.alt) html += `<p class="also">Also: ${esc(day.alt)}</p>`;
+    }
+    html += `</div>`;
+  }
+  const app = document.getElementById("app");
+  app.innerHTML = html;
+  fit(app);
+}
+
+// Shrink (or grow) the text until everything fits the box DAKboard gives this page.
+function fit(app) {
+  let lo = 7, hi = 30, best = lo;
+  const fits = size => {
+    app.style.fontSize = size + "px";
+    return app.getBoundingClientRect().height <= window.innerHeight - 4 &&
+           app.scrollWidth <= app.clientWidth + 1;
+  };
+  while (hi - lo > 0.25) {
+    const mid = (lo + hi) / 2;
+    if (fits(mid)) { best = mid; lo = mid; } else { hi = mid; }
+  }
+  app.style.fontSize = best + "px";
+}
+
+async function load() {
+  try {
+    const r = await fetch("menu.json?cb=" + Date.now(), { cache: "no-store" });
+    if (r.ok) DATA = await r.json();
+  } catch (e) { /* keep the old data if the network hiccups */ }
+  render();
+}
+
+window.addEventListener("resize", render);
+setInterval(render, 60 * 1000);          // re-check the time every minute (switches at SWITCH_HOUR)
+setInterval(load, 30 * 60 * 1000);       // re-read the menu file every 30 minutes
+render();
+load();
+</script>
+</body>
+</html>
