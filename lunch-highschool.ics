@@ -1,0 +1,258 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//School Lunch Board//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:High School Lunch
+X-WR-TIMEZONE:America/Chicago
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VEVENT
+UID:2026-10-01-highschool@school-lunch-board
+DTSTAMP:20261001T000000Z
+DTSTART;VALUE=DATE:20261001
+DTEND;VALUE=DATE:20261002
+SUMMARY:High School lunch: Meatballs with Gravy\, Mashed Potatoes\, Steamed
+  Corn\, Bread & Butter
+DESCRIPTION:Meatballs with Gravy\nMashed Potatoes\nSteamed Corn\nBread & Bu
+ tter\n\nAlso offered: Sub Sandwich Line\n\nFrom the school's published men
+ u\; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-02-highschool@school-lunch-board
+DTSTAMP:20261002T000000Z
+DTSTART;VALUE=DATE:20261002
+DTEND;VALUE=DATE:20261003
+SUMMARY:High School lunch: Breaded Dill Chicken Breast\, On a Bun\, Baked B
+ eans\, Doritos
+DESCRIPTION:Breaded Dill Chicken Breast\nOn a Bun\nBaked Beans\nDoritos\n\n
+ Also offered: Sub Sandwich Line\n\nFrom the school's published menu\; subj
+ ect to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-05-highschool@school-lunch-board
+DTSTAMP:20261005T000000Z
+DTSTART;VALUE=DATE:20261005
+DTEND;VALUE=DATE:20261006
+SUMMARY:High School lunch: Chicken Strips\, Macaroni & Cheese\, Steamed Pea
+ s
+DESCRIPTION:Chicken Strips\nMacaroni & Cheese\nSteamed Peas\n\nAlso offered
+ : Pizza Line\n\nFrom the school's published menu\; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-06-highschool@school-lunch-board
+DTSTAMP:20261006T000000Z
+DTSTART;VALUE=DATE:20261006
+DTEND;VALUE=DATE:20261007
+SUMMARY:High School lunch: Cheeseburgers\, On a Bun\, Crispy French Fries
+DESCRIPTION:Cheeseburgers\nOn a Bun\nCrispy French Fries\n\nAlso offered: P
+ izza Line\n\nFrom the school's published menu\; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-07-highschool@school-lunch-board
+DTSTAMP:20261007T000000Z
+DTSTART;VALUE=DATE:20261007
+DTEND;VALUE=DATE:20261008
+SUMMARY:High School lunch: Hot Ham & Cheese\, On a Croissant\, Baked Beans\
+ , Sun Chips
+DESCRIPTION:Hot Ham & Cheese\nOn a Croissant\nBaked Beans\nSun Chips\n\nAls
+ o offered: Pizza Line\n\nFrom the school's published menu\; subject to cha
+ nge.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-08-highschool@school-lunch-board
+DTSTAMP:20261008T000000Z
+DTSTART;VALUE=DATE:20261008
+DTEND;VALUE=DATE:20261009
+SUMMARY:High School lunch: Cheesy Bread Sticks\, Marinara Sauce\, Steamed C
+ orn\, Side Kick Juices
+DESCRIPTION:Cheesy Bread Sticks\nMarinara Sauce\nSteamed Corn\nSide Kick Ju
+ ices\n\nAlso offered: Sub Sandwich Line\n\nFrom the school's published men
+ u\; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-09-highschool@school-lunch-board
+DTSTAMP:20261009T000000Z
+DTSTART;VALUE=DATE:20261009
+DTEND;VALUE=DATE:20261010
+SUMMARY:High School lunch: Turkey with Gravy\, Mashed Potatoes\, Dinner Rol
+ ls\, Butter
+DESCRIPTION:Turkey with Gravy\nMashed Potatoes\nDinner Rolls\nButter\n\nAls
+ o offered: Sub Sandwich Line\n\nFrom the school's published menu\; subject
+  to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-12-highschool@school-lunch-board
+DTSTAMP:20261012T000000Z
+DTSTART;VALUE=DATE:20261012
+DTEND;VALUE=DATE:20261013
+SUMMARY:High School lunch: Chicken Patty\, on a Bun\, Steamed Corn\, Dorito
+ s
+DESCRIPTION:Chicken Patty\non a Bun\nSteamed Corn\nDoritos\n\nAlso offered:
+  Pizza Line\n\nFrom the school's published menu\; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-13-highschool@school-lunch-board
+DTSTAMP:20261013T000000Z
+DTSTART;VALUE=DATE:20261013
+DTEND;VALUE=DATE:20261014
+SUMMARY:High School lunch: Mini Corn Dogs\, Tator Tots\, Baked Beans
+DESCRIPTION:Mini Corn Dogs\nTator Tots\nBaked Beans\n\nAlso offered: Pizza 
+ Line\n\nFrom the school's published menu\; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-14-highschool@school-lunch-board
+DTSTAMP:20261014T000000Z
+DTSTART;VALUE=DATE:20261014
+DTEND;VALUE=DATE:20261015
+SUMMARY:High School lunch: Flour Tortilla Shell\, Chicken Fajita Meat/Veggi
+ es\, Salsa & Sour Cream\, Shredded Lettuce/Cheese
+DESCRIPTION:Flour Tortilla Shell\nChicken Fajita Meat/Veggies\nSalsa & Sour
+  Cream\nShredded Lettuce/Cheese\n\nAlso offered: Sub Sandwich Line\n\nFrom
+  the school's published menu\; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-15-highschool@school-lunch-board
+DTSTAMP:20261015T000000Z
+DTSTART;VALUE=DATE:20261015
+DTEND;VALUE=DATE:20261016
+SUMMARY:High School lunch: Lasagna\, Steamed Green Beans\, Garlic Knot
+DESCRIPTION:Lasagna\nSteamed Green Beans\nGarlic Knot\n\nAlso offered: Sub 
+ Sandwich Line\n\nFrom the school's published menu\; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-16-highschool@school-lunch-board
+DTSTAMP:20261016T000000Z
+DTSTART;VALUE=DATE:20261016
+DTEND;VALUE=DATE:20261017
+SUMMARY:High School lunch: Sloppy Joe (BBQ)\, On a Bun\, Smilie Potatoes\, 
+ Steamed Peas
+DESCRIPTION:Sloppy Joe (BBQ)\nOn a Bun\nSmilie Potatoes\nSteamed Peas\n\nAl
+ so offered: Sub Sandwich Line\n\nFrom the school's published menu\; subjec
+ t to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-19-highschool@school-lunch-board
+DTSTAMP:20261019T000000Z
+DTSTART;VALUE=DATE:20261019
+DTEND;VALUE=DATE:20261020
+SUMMARY:High School lunch: Crispitos w/Cheese\, Spanish Rice\, Tortilla Chi
+ ps\, Refried Beans\, Salsa & Sour Cream
+DESCRIPTION:Crispitos w/Cheese\nSpanish Rice\nTortilla Chips\nRefried Beans
+ \nSalsa & Sour Cream\n\nAlso offered: Pizza Line\n\nFrom the school's publ
+ ished menu\; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-20-highschool@school-lunch-board
+DTSTAMP:20261020T000000Z
+DTSTART;VALUE=DATE:20261020
+DTEND;VALUE=DATE:20261021
+SUMMARY:High School lunch: Cheeseburger Macaroni\, Casserole\, Steamed Peas
+ \, Bread & Butter
+DESCRIPTION:Cheeseburger Macaroni\nCasserole\nSteamed Peas\nBread & Butter\
+ n\nAlso offered: Pizza Line\n\nFrom the school's published menu\; subject 
+ to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-21-highschool@school-lunch-board
+DTSTAMP:20261021T000000Z
+DTSTART;VALUE=DATE:20261021
+DTEND;VALUE=DATE:20261022
+SUMMARY:High School lunch: Popcorn Chicken\, Soft Baked Pretzels\, Cheddar 
+ Cheese Sauce\, Steamed Corn
+DESCRIPTION:Popcorn Chicken\nSoft Baked Pretzels\nCheddar Cheese Sauce\nSte
+ amed Corn\n\nAlso offered: Pizza Line\n\nFrom the school's published menu\
+ ; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-22-highschool@school-lunch-board
+DTSTAMP:20261022T000000Z
+DTSTART;VALUE=DATE:20261022
+DTEND;VALUE=DATE:20261023
+SUMMARY:High School lunch: Spaghetti Meat Sauce\, Pasta\, Garlic Knot
+DESCRIPTION:Spaghetti Meat Sauce\nPasta\nGarlic Knot\n\nAlso offered: Sub S
+ andwich Line\n\nFrom the school's published menu\; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-23-highschool@school-lunch-board
+DTSTAMP:20261023T000000Z
+DTSTART;VALUE=DATE:20261023
+DTEND;VALUE=DATE:20261024
+SUMMARY:High School lunch: Chicken Ala King\, On a Biscuit\, Steamed Carrot
+ s
+DESCRIPTION:Chicken Ala King\nOn a Biscuit\nSteamed Carrots\n\nAlso offered
+ : Sub Sandwich Line\n\nFrom the school's published menu\; subject to chang
+ e.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-26-highschool@school-lunch-board
+DTSTAMP:20261026T000000Z
+DTSTART;VALUE=DATE:20261026
+DTEND;VALUE=DATE:20261027
+SUMMARY:High School lunch: Yang's Orange Chicken\, Fried Rice w/Vegetables\
+ , Egg Rolls\, Fortune Cookie
+DESCRIPTION:Yang's Orange Chicken\nFried Rice w/Vegetables\nEgg Rolls\nFort
+ une Cookie\n\nAlso offered: Pizza Line\n\nFrom the school's published menu
+ \; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-27-highschool@school-lunch-board
+DTSTAMP:20261027T000000Z
+DTSTART;VALUE=DATE:20261027
+DTEND;VALUE=DATE:20261028
+SUMMARY:High School lunch: Chicken Nuggets\, Mashed Potatoes\, Steamed Corn
+ \, Bread & Butter
+DESCRIPTION:Chicken Nuggets\nMashed Potatoes\nSteamed Corn\nBread & Butter\
+ n\nAlso offered: Pizza Line\n\nFrom the school's published menu\; subject 
+ to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-28-highschool@school-lunch-board
+DTSTAMP:20261028T000000Z
+DTSTART;VALUE=DATE:20261028
+DTEND;VALUE=DATE:20261029
+SUMMARY:High School lunch: Walking Tacos\, Taco Meat\, Shredded Lettuce/Che
+ ese\, Doritos\, Salsa & Sour Cream
+DESCRIPTION:Walking Tacos\nTaco Meat\nShredded Lettuce/Cheese\nDoritos\nSal
+ sa & Sour Cream\n\nAlso offered: Pizza Line\n\nFrom the school's published
+  menu\; subject to change.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-29-highschool@school-lunch-board
+DTSTAMP:20261029T000000Z
+DTSTART;VALUE=DATE:20261029
+DTEND;VALUE=DATE:20261030
+SUMMARY:High School: no school
+DESCRIPTION:No school.
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:2026-10-30-highschool@school-lunch-board
+DTSTAMP:20261030T000000Z
+DTSTART;VALUE=DATE:20261030
+DTEND;VALUE=DATE:20261031
+SUMMARY:High School: no school
+DESCRIPTION:No school.
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
