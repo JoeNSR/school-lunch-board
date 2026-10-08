@@ -403,13 +403,13 @@ def export_ics(outdir, data):
         count = 0
         for day, info in school["days"].items():
             if info["status"] == "OK":
-                summary = f"{short} lunch: " + ", ".join(info["items"])
+                summary = ", ".join(info["items"])
                 desc = "\n".join(info["items"])
                 if info["alt"]:
                     desc += "\n\nAlso offered: " + info["alt"]
                 desc += "\n\nFrom the school's published menu; subject to change."
             elif info["status"] == "NO_SCHOOL":
-                summary, desc = f"{short}: no school", "No school."
+                summary, desc = "No school", "No school."
             else:
                 continue  # menu not readable for that day; leave it off the calendar
             d = dt.date.fromisoformat(day)
