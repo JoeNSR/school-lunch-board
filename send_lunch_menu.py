@@ -16,6 +16,7 @@ Usage:
   python send_lunch_menu.py --dry-run --date 2026-10-14   # pretend "tomorrow" is this date
   python send_lunch_menu.py --dump 2026-10       # print every parsed lunch for a month (to eyeball)
   python send_lunch_menu.py --export-json menu.json   # write this + next month's lunches as JSON (for the DAKboard page)
+  python send_lunch_menu.py --export-ics .            # write lunch-elementary.ics / lunch-highschool.ics calendar feeds
 """
 import argparse
 import calendar
@@ -337,8 +338,8 @@ def dump_month(ym):
             print(f"  {d:>2}: {shown}" + (f"   [{alt}]" if alt else ""))
 
 
-def export_json(path):
-    """Write this month's and next month's lunches for every school to a JSON file."""
+def collect_menu_data():
+    """Return this month's and next month's lunches for every school, keyed by date."""
     today = dt.datetime.now(TZ).date()
     nxt = (today.replace(day=1) + dt.timedelta(days=32)).replace(day=1)
     months = [(today.year, today.month), (nxt.year, nxt.month)]
@@ -355,10 +356,80 @@ def export_json(path):
             "label": school["label"],
             "days": dict(sorted(days.items())),
         }
+    return out
+
+
+def export_json(path, data):
+    """Write the menu data to a JSON file (read by the DAKboard page)."""
     with open(path, "w", encoding="utf-8") as f:
-        json.dump(out, f, indent=1, sort_keys=False)
+        json.dump(data, f, indent=1, sort_keys=False)
         f.write("\n")
-    print(f"wrote {path}: " + ", ".join(f"{k}={len(v['days'])} days" for k, v in out["schools"].items()))
+    print(f"wrote {path}: " + ", ".join(f"{k}={len(v['days'])} days" for k, v in data["schools"].items()))
+
+
+def _ics_text(s):
+    """Escape text for an iCalendar TEXT value."""
+    return s.replace("\\", "\\\\").replace(";", "\\;").replace(",", "\\,").replace("\n", "\\n")
+
+
+def _ics_fold(line):
+    """Fold a content line to at most 75 octets per line, as the iCalendar spec requires."""
+    raw, parts = line.encode("utf-8"), []
+    while True:
+        limit = 75 if not parts else 74
+        if len(raw) <= limit:
+            parts.append(raw)
+            break
+        cut = limit
+        while cut > 0 and (raw[cut] & 0xC0) == 0x80:  # don't split a multi-byte character
+            cut -= 1
+        parts.append(raw[:cut])
+        raw = raw[cut:]
+    return "\r\n ".join(p.decode("utf-8") for p in parts)
+
+
+def export_ics(outdir, data):
+    """Write one all-day-event calendar feed (.ics) per school, for Skylight and similar calendars."""
+    os.makedirs(outdir, exist_ok=True)
+    for key, school in data["schools"].items():
+        short = school["label"].replace("ACHM ", "")
+        lines = [
+            "BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//School Lunch Board//EN",
+            "CALSCALE:GREGORIAN", "METHOD:PUBLISH",
+            f"X-WR-CALNAME:{_ics_text(short + ' Lunch')}",
+            "X-WR-TIMEZONE:America/Chicago",
+            "REFRESH-INTERVAL;VALUE=DURATION:PT6H", "X-PUBLISHED-TTL:PT6H",
+        ]
+        count = 0
+        for day, info in school["days"].items():
+            if info["status"] == "OK":
+                summary = f"{short} lunch: " + ", ".join(info["items"])
+                desc = "\n".join(info["items"])
+                if info["alt"]:
+                    desc += "\n\nAlso offered: " + info["alt"]
+                desc += "\n\nFrom the school's published menu; subject to change."
+            elif info["status"] == "NO_SCHOOL":
+                summary, desc = f"{short}: no school", "No school."
+            else:
+                continue  # menu not readable for that day; leave it off the calendar
+            d = dt.date.fromisoformat(day)
+            lines += [
+                "BEGIN:VEVENT",
+                f"UID:{day}-{key}@school-lunch-board",
+                f"DTSTAMP:{d:%Y%m%d}T000000Z",   # fixed per event so the file only changes when the menu does
+                f"DTSTART;VALUE=DATE:{d:%Y%m%d}",
+                f"DTEND;VALUE=DATE:{d + dt.timedelta(days=1):%Y%m%d}",
+                f"SUMMARY:{_ics_text(summary)}",
+                f"DESCRIPTION:{_ics_text(desc)}",
+                "TRANSP:TRANSPARENT",
+                "END:VEVENT",
+            ]
+            count += 1
+        lines.append("END:VCALENDAR")
+        path = os.path.join(outdir, f"lunch-{key}.ics")
+        with open(path, "w", encoding="utf-8", newline="") as f:
+            f.write("\r\n".join(_ics_fold(l) for l in lines) + "\r\n")
+        print(f"wrote {path}: {count} events")
 
 
 def main():
@@ -368,10 +439,15 @@ def main():
     ap.add_argument("--date", help="treat this YYYY-MM-DD as 'tomorrow'")
     ap.add_argument("--dump", metavar="YYYY-MM", help="print every parsed lunch for a month and exit")
     ap.add_argument("--export-json", metavar="FILE", help="write this and next month's lunches to a JSON file and exit")
+    ap.add_argument("--export-ics", metavar="DIR", help="write lunch-<school>.ics calendar feeds into DIR and exit")
     args = ap.parse_args()
 
-    if args.export_json:
-        export_json(args.export_json)
+    if args.export_json or args.export_ics:
+        data = collect_menu_data()
+        if args.export_json:
+            export_json(args.export_json, data)
+        if args.export_ics:
+            export_ics(args.export_ics, data)
         return 0
 
     if args.dump:
