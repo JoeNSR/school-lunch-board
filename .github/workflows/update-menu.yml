@@ -8,7 +8,7 @@ on:
   workflow_dispatch:       # manual run from the Actions tab
 
 permissions:
-  contents: write          # lets the job commit the refreshed menu.json
+  contents: write          # lets the job commit the refreshed menu.json and lunch-*.ics
 
 jobs:
   update:
@@ -25,17 +25,17 @@ jobs:
       - name: Install dependencies
         run: pip install -r requirements.txt
 
-      - name: Build menu.json from the school's menu PDFs
-        run: python3 send_lunch_menu.py --export-json menu.json
+      - name: Build menu.json and calendar feeds from the school's menu PDFs
+        run: python3 send_lunch_menu.py --export-json menu.json --export-ics .
 
       - name: Commit if the menu changed
         run: |
-          if [ -n "$(git status --porcelain menu.json)" ]; then
+          if [ -n "$(git status --porcelain menu.json 'lunch-*.ics')" ]; then
             git config user.name "github-actions[bot]"
             git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-            git add menu.json
+            git add menu.json lunch-*.ics
             git commit -m "Update lunch menu data"
             git push
           else
-            echo "menu.json unchanged"
+            echo "no changes"
           fi
