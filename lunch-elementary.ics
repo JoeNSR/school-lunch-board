@@ -12,7 +12,7 @@ UID:2026-10-01-elementary@school-lunch-board
 DTSTAMP:20261001T000000Z
 DTSTART;VALUE=DATE:20261001
 DTEND;VALUE=DATE:20261002
-SUMMARY:Elementary lunch: Cheeseburgers\, On a Bun\, Crispy French Fries
+SUMMARY:Cheeseburgers\, On a Bun\, Crispy French Fries
 DESCRIPTION:Cheeseburgers\nOn a Bun\nCrispy French Fries\n\nFrom the school
  's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -22,7 +22,7 @@ UID:2026-10-02-elementary@school-lunch-board
 DTSTAMP:20261002T000000Z
 DTSTART;VALUE=DATE:20261002
 DTEND;VALUE=DATE:20261003
-SUMMARY:Elementary lunch: Mostaccioli\, Steamed Green Beans\, Garlic Toast
+SUMMARY:Mostaccioli\, Steamed Green Beans\, Garlic Toast
 DESCRIPTION:Mostaccioli\nSteamed Green Beans\nGarlic Toast\n\nFrom the scho
  ol's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -32,8 +32,7 @@ UID:2026-10-05-elementary@school-lunch-board
 DTSTAMP:20261005T000000Z
 DTSTART;VALUE=DATE:20261005
 DTEND;VALUE=DATE:20261006
-SUMMARY:Elementary lunch: French Toast Sticks\, Sausage Patty\, Tri Tator H
- ashbrowns
+SUMMARY:French Toast Sticks\, Sausage Patty\, Tri Tator Hashbrowns
 DESCRIPTION:French Toast Sticks\nSausage Patty\nTri Tator Hashbrowns\n\nFro
  m the school's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -43,7 +42,7 @@ UID:2026-10-06-elementary@school-lunch-board
 DTSTAMP:20261006T000000Z
 DTSTART;VALUE=DATE:20261006
 DTEND;VALUE=DATE:20261007
-SUMMARY:Elementary lunch: Chicken Patty\, on a Bun\, Sun Chips
+SUMMARY:Chicken Patty\, on a Bun\, Sun Chips
 DESCRIPTION:Chicken Patty\non a Bun\nSun Chips\n\nFrom the school's publish
  ed menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -53,8 +52,7 @@ UID:2026-10-07-elementary@school-lunch-board
 DTSTAMP:20261007T000000Z
 DTSTART;VALUE=DATE:20261007
 DTEND;VALUE=DATE:20261008
-SUMMARY:Elementary lunch: Personal Pan Pizzas\, Goldfish Cheddar Crackers\,
-  Jonnypops
+SUMMARY:Personal Pan Pizzas\, Goldfish Cheddar Crackers\, Jonnypops
 DESCRIPTION:Personal Pan Pizzas\nGoldfish Cheddar Crackers\nJonnypops\n\nFr
  om the school's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -64,7 +62,7 @@ UID:2026-10-08-elementary@school-lunch-board
 DTSTAMP:20261008T000000Z
 DTSTART;VALUE=DATE:20261008
 DTEND;VALUE=DATE:20261009
-SUMMARY:Elementary lunch: Hot Ham & Cheese\, on a Croissant\, Baked Beans
+SUMMARY:Hot Ham & Cheese\, on a Croissant\, Baked Beans
 DESCRIPTION:Hot Ham & Cheese\non a Croissant\nBaked Beans\n\nFrom the schoo
  l's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -74,8 +72,8 @@ UID:2026-10-09-elementary@school-lunch-board
 DTSTAMP:20261009T000000Z
 DTSTART;VALUE=DATE:20261009
 DTEND;VALUE=DATE:20261010
-SUMMARY:Elementary lunch: Walking Tacos\, Taco Meat\, Shredded Lettuce/Chee
- se\, Doritos\, Salsa & Sour Cream
+SUMMARY:Walking Tacos\, Taco Meat\, Shredded Lettuce/Cheese\, Doritos\, Sal
+ sa & Sour Cream
 DESCRIPTION:Walking Tacos\nTaco Meat\nShredded Lettuce/Cheese\nDoritos\nSal
  sa & Sour Cream\n\nFrom the school's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -85,8 +83,8 @@ UID:2026-10-12-elementary@school-lunch-board
 DTSTAMP:20261012T000000Z
 DTSTART;VALUE=DATE:20261012
 DTEND;VALUE=DATE:20261013
-SUMMARY:Elementary lunch: Mandarin Orange Chicken\, Fried Rice w/Vegetables
- \, Egg Roll\, Fortune Cookie
+SUMMARY:Mandarin Orange Chicken\, Fried Rice w/Vegetables\, Egg Roll\, Fort
+ une Cookie
 DESCRIPTION:Mandarin Orange Chicken\nFried Rice w/Vegetables\nEgg Roll\nFor
  tune Cookie\n\nFrom the school's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -96,7 +94,7 @@ UID:2026-10-13-elementary@school-lunch-board
 DTSTAMP:20261013T000000Z
 DTSTART;VALUE=DATE:20261013
 DTEND;VALUE=DATE:20261014
-SUMMARY:Elementary lunch: Mini Corn Dogs\, Baked Beans\, Side Kick Juices
+SUMMARY:Mini Corn Dogs\, Baked Beans\, Side Kick Juices
 DESCRIPTION:Mini Corn Dogs\nBaked Beans\nSide Kick Juices\n\nFrom the schoo
  l's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -106,8 +104,7 @@ UID:2026-10-14-elementary@school-lunch-board
 DTSTAMP:20261014T000000Z
 DTSTART;VALUE=DATE:20261014
 DTEND;VALUE=DATE:20261015
-SUMMARY:Elementary lunch: Meatballs with Gravy\, Mashed Potatoes\, Bread & 
- Butter
+SUMMARY:Meatballs with Gravy\, Mashed Potatoes\, Bread & Butter
 DESCRIPTION:Meatballs with Gravy\nMashed Potatoes\nBread & Butter\n\nFrom t
  he school's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -117,8 +114,8 @@ UID:2026-10-15-elementary@school-lunch-board
 DTSTAMP:20261015T000000Z
 DTSTART;VALUE=DATE:20261015
 DTEND;VALUE=DATE:20261016
-SUMMARY:Elementary lunch: Mini Cheesy Italian\, Bread Pull Aparts\, Steamed
-  Peas\, Marinara Sauce
+SUMMARY:Mini Cheesy Italian\, Bread Pull Aparts\, Steamed Peas\, Marinara S
+ auce
 DESCRIPTION:Mini Cheesy Italian\nBread Pull Aparts\nSteamed Peas\nMarinara 
  Sauce\n\nFrom the school's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -128,8 +125,8 @@ UID:2026-10-16-elementary@school-lunch-board
 DTSTAMP:20261016T000000Z
 DTSTART;VALUE=DATE:20261016
 DTEND;VALUE=DATE:20261017
-SUMMARY:Elementary lunch: Turkey\, Ham & Cheese\, On a Sub Bun\, Baked Chip
- s\, Scooby Doo Chocolate\, Graham Crackers
+SUMMARY:Turkey\, Ham & Cheese\, On a Sub Bun\, Baked Chips\, Scooby Doo Cho
+ colate\, Graham Crackers
 DESCRIPTION:Turkey\, Ham & Cheese\nOn a Sub Bun\nBaked Chips\nScooby Doo Ch
  ocolate\nGraham Crackers\n\nFrom the school's published menu\; subject to 
  change.
@@ -140,8 +137,7 @@ UID:2026-10-19-elementary@school-lunch-board
 DTSTAMP:20261019T000000Z
 DTSTART;VALUE=DATE:20261019
 DTEND;VALUE=DATE:20261020
-SUMMARY:Elementary lunch: Garlic French Bread Pizza\, Marinara Sauce\, Stea
- med Corn
+SUMMARY:Garlic French Bread Pizza\, Marinara Sauce\, Steamed Corn
 DESCRIPTION:Garlic French Bread Pizza\nMarinara Sauce\nSteamed Corn\n\nFrom
   the school's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -151,8 +147,7 @@ UID:2026-10-20-elementary@school-lunch-board
 DTSTAMP:20261020T000000Z
 DTSTART;VALUE=DATE:20261020
 DTEND;VALUE=DATE:20261021
-SUMMARY:Elementary lunch: Chicken Nuggets\, Mashed Potatoes\, Bread & Butte
- r
+SUMMARY:Chicken Nuggets\, Mashed Potatoes\, Bread & Butter
 DESCRIPTION:Chicken Nuggets\nMashed Potatoes\nBread & Butter\n\nFrom the sc
  hool's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -162,7 +157,7 @@ UID:2026-10-21-elementary@school-lunch-board
 DTSTAMP:20261021T000000Z
 DTSTART;VALUE=DATE:20261021
 DTEND;VALUE=DATE:20261022
-SUMMARY:Elementary lunch: Lasagna\, Steamed Green Beans\, Garlic Knot
+SUMMARY:Lasagna\, Steamed Green Beans\, Garlic Knot
 DESCRIPTION:Lasagna\nSteamed Green Beans\nGarlic Knot\n\nFrom the school's 
  published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -172,8 +167,7 @@ UID:2026-10-22-elementary@school-lunch-board
 DTSTAMP:20261022T000000Z
 DTSTART;VALUE=DATE:20261022
 DTEND;VALUE=DATE:20261023
-SUMMARY:Elementary lunch: Quesadilla\, Cheesy Rice\, Refried Beans\, Salsa 
- & Sour Cream
+SUMMARY:Quesadilla\, Cheesy Rice\, Refried Beans\, Salsa & Sour Cream
 DESCRIPTION:Quesadilla\nCheesy Rice\nRefried Beans\nSalsa & Sour Cream\n\nF
  rom the school's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -183,8 +177,7 @@ UID:2026-10-23-elementary@school-lunch-board
 DTSTAMP:20261023T000000Z
 DTSTART;VALUE=DATE:20261023
 DTEND;VALUE=DATE:20261024
-SUMMARY:Elementary lunch: Popcorn Chicken\, Baked Soft Pretzels\, Cheddar C
- heese Sauce
+SUMMARY:Popcorn Chicken\, Baked Soft Pretzels\, Cheddar Cheese Sauce
 DESCRIPTION:Popcorn Chicken\nBaked Soft Pretzels\nCheddar Cheese Sauce\n\nF
  rom the school's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -194,8 +187,7 @@ UID:2026-10-26-elementary@school-lunch-board
 DTSTAMP:20261026T000000Z
 DTSTART;VALUE=DATE:20261026
 DTEND;VALUE=DATE:20261027
-SUMMARY:Elementary lunch: Crispitos\, Tortilla Chips\, Refried Beans\, Sals
- a & Sour Cream
+SUMMARY:Crispitos\, Tortilla Chips\, Refried Beans\, Salsa & Sour Cream
 DESCRIPTION:Crispitos\nTortilla Chips\nRefried Beans\nSalsa & Sour Cream\n\
  nFrom the school's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -205,7 +197,7 @@ UID:2026-10-27-elementary@school-lunch-board
 DTSTAMP:20261027T000000Z
 DTSTART;VALUE=DATE:20261027
 DTEND;VALUE=DATE:20261028
-SUMMARY:Elementary lunch: Chicken Ala King\, On a Biscuit\, Steamed Corn
+SUMMARY:Chicken Ala King\, On a Biscuit\, Steamed Corn
 DESCRIPTION:Chicken Ala King\nOn a Biscuit\nSteamed Corn\n\nFrom the school
  's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -215,7 +207,7 @@ UID:2026-10-28-elementary@school-lunch-board
 DTSTAMP:20261028T000000Z
 DTSTART;VALUE=DATE:20261028
 DTEND;VALUE=DATE:20261029
-SUMMARY:Elementary lunch: Spaghetti Meat Sauce\, Pasta\, Mini Garlic Bread
+SUMMARY:Spaghetti Meat Sauce\, Pasta\, Mini Garlic Bread
 DESCRIPTION:Spaghetti Meat Sauce\nPasta\nMini Garlic Bread\n\nFrom the scho
  ol's published menu\; subject to change.
 TRANSP:TRANSPARENT
@@ -225,7 +217,7 @@ UID:2026-10-29-elementary@school-lunch-board
 DTSTAMP:20261029T000000Z
 DTSTART;VALUE=DATE:20261029
 DTEND;VALUE=DATE:20261030
-SUMMARY:Elementary: no school
+SUMMARY:No school
 DESCRIPTION:No school.
 TRANSP:TRANSPARENT
 END:VEVENT
@@ -234,7 +226,7 @@ UID:2026-10-30-elementary@school-lunch-board
 DTSTAMP:20261030T000000Z
 DTSTART;VALUE=DATE:20261030
 DTEND;VALUE=DATE:20261031
-SUMMARY:Elementary: no school
+SUMMARY:No school
 DESCRIPTION:No school.
 TRANSP:TRANSPARENT
 END:VEVENT
