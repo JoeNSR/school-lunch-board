@@ -3,12 +3,367 @@
   "elementary": {
    "name": "Lincoln Elementary",
    "label": "ACHM Elementary",
-   "days": {}
+   "days": {
+    "2026-11-02": {
+     "status": "OK",
+     "items": [
+      "Hotdog",
+      "On a Bun",
+      "Baked Beans",
+      "Doritos"
+     ],
+     "alt": null
+    },
+    "2026-11-03": {
+     "status": "OK",
+     "items": [
+      "Pepperoni Pizza",
+      "Steamed Corn",
+      "Scooby Doo Chocolate Crackers"
+     ],
+     "alt": null
+    },
+    "2026-11-04": {
+     "status": "OK",
+     "items": [
+      "Breaded Cheese Ravioli",
+      "Steamed Broccoli w/Cheese",
+      "Marinara"
+     ],
+     "alt": null
+    },
+    "2026-11-05": {
+     "status": "OK",
+     "items": [
+      "Mini Cheesy Italian Bread Pull Aparts",
+      "Steamed Peas",
+      "Marinara Sauce"
+     ],
+     "alt": null
+    },
+    "2026-11-06": {
+     "status": "OK",
+     "items": [
+      "Chicken Patty",
+      "On a Bun",
+      "Sun Chips",
+      "Side Kick Juices"
+     ],
+     "alt": null
+    },
+    "2026-11-09": {
+     "status": "OK",
+     "items": [
+      "Pancakes",
+      "Sausage Patties",
+      "Tri Tator Hashbrowns"
+     ],
+     "alt": null
+    },
+    "2026-11-10": {
+     "status": "OK",
+     "items": [
+      "Quesadilla",
+      "Cheesy Rice",
+      "Refried Beans",
+      "Salsa & Sour Cream"
+     ],
+     "alt": null
+    },
+    "2026-11-11": {
+     "status": "OK",
+     "items": [
+      "Spaghetti Meat Sauce",
+      "Pasta",
+      "Green Beans",
+      "Garlic Knots",
+      "Ice Cream"
+     ],
+     "alt": null
+    },
+    "2026-11-12": {
+     "status": "OK",
+     "items": [
+      "Sloppy Joe (BBQ)",
+      "On a Bun",
+      "Smilie Potatoes"
+     ],
+     "alt": null
+    },
+    "2026-11-13": {
+     "status": "OK",
+     "items": [
+      "Turkey & Cheese",
+      "On a Sub Bun",
+      "Baked Chips",
+      "Mini Chocolate Chip Cookies"
+     ],
+     "alt": null
+    },
+    "2026-11-16": {
+     "status": "OK",
+     "items": [
+      "Popcorn Chicken",
+      "Soft Baked Pretzel",
+      "Cheddar Cheese Sauce"
+     ],
+     "alt": null
+    },
+    "2026-11-17": {
+     "status": "OK",
+     "items": [
+      "Cheeseburgers",
+      "on a Bun",
+      "Crispy French Fries"
+     ],
+     "alt": null
+    },
+    "2026-11-18": {
+     "status": "OK",
+     "items": [
+      "Sliced Turkey w/ Gravy",
+      "Mashed Potatoes",
+      "Bread Stuffing/Cranberries",
+      "Dinner Roll/Butter",
+      "Dessert"
+     ],
+     "alt": null
+    },
+    "2026-11-19": {
+     "status": "OK",
+     "items": [
+      "Hot Ham & Cheese",
+      "On a Croissant",
+      "Baked Beans"
+     ],
+     "alt": null
+    },
+    "2026-11-20": {
+     "status": "OK",
+     "items": [
+      "Lasagna",
+      "Steamed Green Beans",
+      "Garlic"
+     ],
+     "alt": null
+    },
+    "2026-11-24": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    },
+    "2026-11-25": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    },
+    "2026-11-26": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    },
+    "2026-11-27": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    },
+    "2026-11-30": {
+     "status": "OK",
+     "items": [
+      "Stuffed Crust Pizza",
+      "Garlic Knot",
+      "Marinara Sauce",
+      "Jonnypop"
+     ],
+     "alt": null
+    }
+   }
   },
   "highschool": {
    "name": "Lincoln High School",
    "label": "ACHM High School",
-   "days": {}
+   "days": {
+    "2026-11-02": {
+     "status": "OK",
+     "items": [
+      "Pancakes",
+      "Sausage Patties",
+      "Tri Tator Hashbrowns",
+      "Assorted Juice"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-11-03": {
+     "status": "OK",
+     "items": [
+      "Hotdog",
+      "On a Bun",
+      "Baked Beans",
+      "Doritos"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-11-04": {
+     "status": "OK",
+     "items": [
+      "Turkey with Gravy",
+      "Mashed Potatoes",
+      "Steamed Corn",
+      "Bread & Butter"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-11-05": {
+     "status": "OK",
+     "items": [
+      "Mostaccioli",
+      "Steamed Peas",
+      "Garlic Bread"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-11-06": {
+     "status": "OK",
+     "items": [
+      "Nachos",
+      "Taco Meat",
+      "Tortilla Chips",
+      "Cheddar Cheese Sauce",
+      "Salsa & Sour Cream"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-11-09": {
+     "status": "OK",
+     "items": [
+      "Chicken Patty",
+      "On a Bun",
+      "Steamed Corn",
+      "Sun Chips"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-11-10": {
+     "status": "OK",
+     "items": [
+      "Mini Corndogs",
+      "French Fries",
+      "Baked Beans",
+      "Side Kick Juice"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-11-11": {
+     "status": "OK",
+     "items": [
+      "Spaghetti Meat Sauce",
+      "Pasta",
+      "Green Beans",
+      "Garlic Knot",
+      "Ice Cream"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-11-12": {
+     "status": "OK",
+     "items": [
+      "Flour Tortilla Shell",
+      "Chicken Fajita Meat & Veggies",
+      "Salsa & Sour Cream",
+      "Shredded Lettuce & Cheese"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-11-13": {
+     "status": "OK",
+     "items": [
+      "Sloppy Joe (BBQ)",
+      "On a Bun",
+      "Potato Wedges",
+      "Steamed Peas"
+     ],
+     "alt": "Sub Sandwich Line"
+    },
+    "2026-11-16": {
+     "status": "OK",
+     "items": [
+      "Crispitos w/Cheese",
+      "Spanish Rice",
+      "Refried Beans",
+      "Salsa & Sour Cream"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-11-17": {
+     "status": "OK",
+     "items": [
+      "Cheeseburgers",
+      "On a Bun",
+      "Crispy French Fries"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-11-18": {
+     "status": "OK",
+     "items": [
+      "Hot Ham & Cheese",
+      "On a Croissant",
+      "Cheddar Broccoli Soup",
+      "Crackers"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-11-19": {
+     "status": "OK",
+     "items": [
+      "Sliced Turkey w/ Gravy",
+      "Mashed Potatoes",
+      "Bread Stuffing/Cranberries",
+      "Dinner Roll/Butter",
+      "Dessert"
+     ],
+     "alt": null
+    },
+    "2026-11-20": {
+     "status": "OK",
+     "items": [
+      "Chicken Strips",
+      "Macaroni & Cheese",
+      "Steamed Peas"
+     ],
+     "alt": "Pizza Line"
+    },
+    "2026-11-24": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    },
+    "2026-11-25": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    },
+    "2026-11-26": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    },
+    "2026-11-27": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    },
+    "2026-11-30": {
+     "status": "OK",
+     "items": [
+      "Breaded Chicken Parmesan",
+      "Penne Pasta",
+      "Steamed Carrots",
+      "Mini Garlic Toast"
+     ],
+     "alt": "Pizza Line"
+    }
+   }
   }
  }
 }
