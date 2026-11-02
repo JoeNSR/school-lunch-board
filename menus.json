@@ -1,5 +1,5 @@
 {
- "_comment": "Hand-entered lunches, used when the school posts menu images instead of PDFs. Format: school -> 'YYYY-MM' -> day -> list of lines as they appear in that day's box (the 'Lunch' heading, then the items; a 'Pizza Line' or 'Sub Sandwich Line' heading may come first). A month listed here is used instead of the school's PDF. Nov 23 is a picture only on the school's menu, so it is left out.",
+ "_comment": "Hand-entered lunches, used when the school posts menu images instead of PDFs. Format: school -> 'YYYY-MM' -> day -> list of lines as they appear in that day's box (the 'Lunch' heading, then the items; a 'Pizza Line' or 'Sub Sandwich Line' heading may come first). A month listed here is used instead of the school's PDF. Nov 23-27 is Thanksgiving break (no school).",
  "elementary": {
   "2026-11": {
    "2": [
@@ -99,6 +99,9 @@
     "Lasagna",
     "Steamed Green Beans",
     "Garlic"
+   ],
+   "23": [
+    "NO SCHOOL"
    ],
    "24": [
     "NO SCHOOL"
@@ -241,6 +244,9 @@
     "Chicken Strips",
     "Macaroni & Cheese",
     "Steamed Peas"
+   ],
+   "23": [
+    "NO SCHOOL"
    ],
    "24": [
     "NO SCHOOL"
