@@ -217,8 +217,37 @@ def lunch_from_lines(lines):
     return "OK", items, alt
 
 
+MENUS_FILE = "menus.json"
+MENUS_URL = "https://joensr.github.io/school-lunch-board/menus.json"
+_manual = None
+
+
+def manual_menus():
+    """Hand-entered menus, for months when the school posts images instead of PDFs.
+
+    Format: {school_key: {"YYYY-MM": {"day": [lines]}}}. Read from menus.json next to the script,
+    or from the public lunch-board page (so the private email repo shares the same file).
+    """
+    global _manual
+    if _manual is None:
+        _manual = {}
+        try:
+            if os.path.exists(MENUS_FILE):
+                with open(MENUS_FILE, encoding="utf-8") as f:
+                    data = json.load(f)
+            else:
+                data = json.loads(http_get(MENUS_URL).decode("utf-8"))
+            _manual = {k: v for k, v in data.items() if isinstance(v, dict)}
+        except Exception as e:  # noqa: BLE001
+            print(f"  (could not read hand-entered menus: {e})")
+    return _manual
+
+
 def load_month(school, year, month):
-    """Find the school's PDF for this month; return {day: lines} or None if not posted."""
+    """Return {day: lines} for this month (hand-entered menu first, else the school's PDF), or None if not posted."""
+    manual = manual_menus().get(school["key"], {}).get(f"{year:04d}-{month:02d}")
+    if manual is not None:
+        return {int(d): lines for d, lines in manual.items()}
     for url, text in pdf_links(school):
         y, m, days = parse_menu_pdf(http_get(url))
         if (y, m) == (year, month):
