@@ -1,0 +1,267 @@
+{
+ "_comment": "Hand-entered lunches, used when the school posts menu images instead of PDFs. Format: school -> 'YYYY-MM' -> day -> list of lines as they appear in that day's box (the 'Lunch' heading, then the items; a 'Pizza Line' or 'Sub Sandwich Line' heading may come first). A month listed here is used instead of the school's PDF. Nov 23 is a picture only on the school's menu, so it is left out.",
+ "elementary": {
+  "2026-11": {
+   "2": [
+    "Lunch",
+    "Hotdog",
+    "On a Bun",
+    "Baked Beans",
+    "Doritos"
+   ],
+   "3": [
+    "Lunch",
+    "Pepperoni Pizza",
+    "Steamed Corn",
+    "Scooby Doo Chocolate Crackers"
+   ],
+   "4": [
+    "Lunch",
+    "Breaded Cheese Ravioli",
+    "Steamed Broccoli w/Cheese",
+    "Marinara"
+   ],
+   "5": [
+    "Lunch",
+    "Mini Cheesy Italian Bread Pull Aparts",
+    "Steamed Peas",
+    "Marinara Sauce"
+   ],
+   "6": [
+    "Lunch",
+    "Chicken Patty",
+    "On a Bun",
+    "Sun Chips",
+    "Side Kick Juices"
+   ],
+   "9": [
+    "Lunch",
+    "Pancakes",
+    "Sausage Patties",
+    "Tri Tator Hashbrowns"
+   ],
+   "10": [
+    "Lunch",
+    "Quesadilla",
+    "Cheesy Rice",
+    "Refried Beans",
+    "Salsa & Sour Cream"
+   ],
+   "11": [
+    "Lunch",
+    "Spaghetti Meat Sauce",
+    "Pasta",
+    "Green Beans",
+    "Garlic Knots",
+    "Ice Cream"
+   ],
+   "12": [
+    "Lunch",
+    "Sloppy Joe (BBQ)",
+    "On a Bun",
+    "Smilie Potatoes"
+   ],
+   "13": [
+    "Lunch",
+    "Turkey & Cheese",
+    "On a Sub Bun",
+    "Baked Chips",
+    "Mini Chocolate Chip Cookies"
+   ],
+   "16": [
+    "Lunch",
+    "Popcorn Chicken",
+    "Soft Baked Pretzel",
+    "Cheddar Cheese Sauce"
+   ],
+   "17": [
+    "Lunch",
+    "Cheeseburgers",
+    "on a Bun",
+    "Crispy French Fries"
+   ],
+   "18": [
+    "Lunch",
+    "Sliced Turkey w/ Gravy",
+    "Mashed Potatoes",
+    "Bread Stuffing/Cranberries",
+    "Dinner Roll/Butter",
+    "Dessert"
+   ],
+   "19": [
+    "Lunch",
+    "Hot Ham & Cheese",
+    "On a Croissant",
+    "Baked Beans"
+   ],
+   "20": [
+    "Lunch",
+    "Lasagna",
+    "Steamed Green Beans",
+    "Garlic"
+   ],
+   "24": [
+    "NO SCHOOL"
+   ],
+   "25": [
+    "NO SCHOOL"
+   ],
+   "26": [
+    "NO SCHOOL"
+   ],
+   "27": [
+    "NO SCHOOL"
+   ],
+   "30": [
+    "Lunch",
+    "Stuffed Crust Pizza",
+    "Garlic Knot",
+    "Marinara Sauce",
+    "Jonnypop"
+   ]
+  }
+ },
+ "highschool": {
+  "2026-11": {
+   "2": [
+    "Pizza Line",
+    "Lunch",
+    "Pancakes",
+    "Sausage Patties",
+    "Tri Tator Hashbrowns",
+    "Assorted Juice"
+   ],
+   "3": [
+    "Pizza Line",
+    "Lunch",
+    "Hotdog",
+    "On a Bun",
+    "Baked Beans",
+    "Doritos"
+   ],
+   "4": [
+    "Pizza Line",
+    "Lunch",
+    "Turkey with Gravy",
+    "Mashed Potatoes",
+    "Steamed Corn",
+    "Bread & Butter"
+   ],
+   "5": [
+    "Sub Sandwich Line",
+    "Lunch",
+    "Mostaccioli",
+    "Steamed Peas",
+    "Garlic Bread"
+   ],
+   "6": [
+    "Sub Sandwich Line",
+    "Lunch",
+    "Nachos",
+    "Taco Meat",
+    "Tortilla Chips",
+    "Cheddar Cheese Sauce",
+    "Salsa & Sour Cream"
+   ],
+   "9": [
+    "Pizza Line",
+    "Lunch",
+    "Chicken Patty",
+    "On a Bun",
+    "Steamed Corn",
+    "Sun Chips"
+   ],
+   "10": [
+    "Pizza Line",
+    "Lunch",
+    "Mini Corndogs",
+    "French Fries",
+    "Baked Beans",
+    "Side Kick Juice"
+   ],
+   "11": [
+    "Sub Sandwich Line",
+    "Lunch",
+    "Spaghetti Meat Sauce",
+    "Pasta",
+    "Green Beans",
+    "Garlic Knot",
+    "Ice Cream"
+   ],
+   "12": [
+    "Sub Sandwich Line",
+    "Lunch",
+    "Flour Tortilla Shell",
+    "Chicken Fajita Meat & Veggies",
+    "Salsa & Sour Cream",
+    "Shredded Lettuce & Cheese"
+   ],
+   "13": [
+    "Sub Sandwich Line",
+    "Lunch",
+    "Sloppy Joe (BBQ)",
+    "On a Bun",
+    "Potato Wedges",
+    "Steamed Peas"
+   ],
+   "16": [
+    "Pizza Line",
+    "Lunch",
+    "Crispitos w/Cheese",
+    "Spanish Rice",
+    "Refried Beans",
+    "Salsa & Sour Cream"
+   ],
+   "17": [
+    "Pizza Line",
+    "Lunch",
+    "Cheeseburgers",
+    "On a Bun",
+    "Crispy French Fries"
+   ],
+   "18": [
+    "Pizza Line",
+    "Lunch",
+    "Hot Ham & Cheese",
+    "On a Croissant",
+    "Cheddar Broccoli Soup",
+    "Crackers"
+   ],
+   "19": [
+    "Lunch",
+    "Sliced Turkey w/ Gravy",
+    "Mashed Potatoes",
+    "Bread Stuffing/Cranberries",
+    "Dinner Roll/Butter",
+    "Dessert"
+   ],
+   "20": [
+    "Pizza Line",
+    "Lunch",
+    "Chicken Strips",
+    "Macaroni & Cheese",
+    "Steamed Peas"
+   ],
+   "24": [
+    "NO SCHOOL"
+   ],
+   "25": [
+    "NO SCHOOL"
+   ],
+   "26": [
+    "NO SCHOOL"
+   ],
+   "27": [
+    "NO SCHOOL"
+   ],
+   "30": [
+    "Pizza Line",
+    "Lunch",
+    "Breaded Chicken Parmesan",
+    "Penne Pasta",
+    "Steamed Carrots",
+    "Mini Garlic Toast"
+   ]
+  }
+ }
+}
