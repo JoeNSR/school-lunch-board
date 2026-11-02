@@ -147,6 +147,11 @@
      ],
      "alt": null
     },
+    "2026-11-23": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
+    },
     "2026-11-24": {
      "status": "NO_SCHOOL",
      "items": [],
@@ -332,6 +337,11 @@
       "Steamed Peas"
      ],
      "alt": "Pizza Line"
+    },
+    "2026-11-23": {
+     "status": "NO_SCHOOL",
+     "items": [],
+     "alt": null
     },
     "2026-11-24": {
      "status": "NO_SCHOOL",
